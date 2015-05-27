@@ -19,6 +19,9 @@ $(function ()
                 privacyPolicyUrl: 'http://www.asusplus.it/app/cookie',
                 bannerPosition : 'bottom',
                 //bannerLang : $("html").data("lang")
+            },
+            strings:
+            {
             }
         });
 
