@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html data-lang="it">   <!-- LINGUA -->
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- COOKIES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <link href="../cookieconsent.css" rel="stylesheet">
+    <script src="../cookieconsent.js"></script>
+
+    <script>
+        $(function ()
+        {
+            cc.initialise(
+                    {
+                        cookies: {
+                            social: {},
+                            analytics: {},
+                            advertising: {}
+                        },
+                        settings: {
+                            hideallsitesbutton: true,
+                            privacyPolicy: true,
+                            privacyPolicyUrl: 'cookiepolicy.html',
+                            bannerPosition : 'bottom',
+                            bannerLang : $("html").data("lang")
+                        }
+                    });
+
+            cc.checkapproval();
+        });
+    </script>
+
+</head>
+<body>
+    <h1>Pagina di esempio</h1>
+
+
+
+    <!-- Google Analytics -->
+    <script type="text/plain" class="cc-onconsent-analytics">
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-49597043-3');ga('send','pageview');
+    </script>
+
+
+    <!-- PX FB -->
+    <script type="text/plain" class="cc-onconsent-social">(function() {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+        _fbq.push(['addPixelId', '1560064557540266']);
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', 'PixelInitialized', {}]);
+    </script>
+
+
+    <!-- Google Remarketing Code  -->
+    <script type="text/plain" class="cc-onconsent-advertising">
+        /* <![CDATA[ */
+        var google_conversion_id = 1017751816;
+        var google_conversion_label = "6o2zCNCJmAgQiNKm5QM";
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+
+
+</body>
+</html>

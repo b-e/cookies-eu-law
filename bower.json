@@ -1,0 +1,12 @@
+{
+  "name": "cookies",
+  "version": "0.0.0",
+  "authors": [
+    "Mattia Benedetti <mattiabenedetti@graffiti2000.com>"
+  ],
+  "description": "script per cookielaw",
+  "main": "cookieconsent.js, cookieconsent.css",
+  "moduleType": [
+    "es6"
+  ]
+}
