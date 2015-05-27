@@ -72,7 +72,7 @@ var cc =
         hideallsitesbutton: false,
         disableallsites: false,
         hideprivacysettingstab: false,
-        scriptdelay: 800,
+        scriptdelay: 400,
         testmode: false,
         overridewarnings: false,
         onlyshowwithineu: false,
@@ -401,6 +401,14 @@ var cc =
         {
             e.preventDefault();
             cc.showmodal();
+        });
+
+        $(window).scroll(function()
+        {
+            if($(window).scrollTop() > 100 && cc.allasked == false)
+            {
+                $("#cc-approve-button-thissite").click();
+            }
         });
 
         cc.initobj = obj;
