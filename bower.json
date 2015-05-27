@@ -5,7 +5,7 @@
     "Mattia Benedetti <mattiabenedetti@graffiti2000.com>"
   ],
   "description": "script per cookielaw",
-  "main": "cookieconsent.js, cookieconsent.css",
+  "main": ["cookieconsent.js", "cookieconsent.css"],
   "moduleType": [
     "es6"
   ]
