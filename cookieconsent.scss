@@ -330,12 +330,7 @@
 LIGHT STYLE
 */
 
-#cc-notification.cc-light
-{
-	background: rgb(226, 226, 226) !important;
-	background-color: rgba(226, 226, 226, 0.95) !important;
-	color: #1d1d1d !important;
-}
+
 
 #cc-notification.cc-light #cc-notification-permissions li
 {
@@ -1720,4 +1715,38 @@ DARK STYLE
 #cc-modal #cc-modal-wrapper li strong
 {
 	width: auto !important;
+}
+
+
+#cc-notification.cc-light
+{
+    background: rgb(226, 226, 226) !important;
+    background-color: rgba(226, 226, 226, 0.95) !important;
+    color: #1d1d1d !important;
+
+    a
+    {
+        color: #015E96 !important;
+    }
+
+    h2 span
+    {
+        color: #333 !important;
+    }
+
+    h2 a
+    {
+        margin-left: 0px;
+    }
+
+    ul.cc-notification-buttons li a
+    {
+        background-color: #FFFFFF !important;
+        color: #2B2B2B !important;
+
+        &:hover
+        {
+            box-shadow: none !important;
+        }
+    }
 }

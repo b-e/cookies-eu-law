@@ -18,6 +18,8 @@ $(function ()
                 privacyPolicy: true,
                 privacyPolicyUrl: 'http://www.asusplus.it/app/cookie',
                 bannerPosition : 'bottom',
+                style: "dark"
+                //style: "light",
                 //bannerLang : $("html").data("lang")
             },
             strings:
