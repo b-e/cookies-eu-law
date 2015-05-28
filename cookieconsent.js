@@ -99,7 +99,7 @@ var cc =
         notificationTitle: "Questo sito utilizza cookie, anche di terze parti, per inviarti pubblicità e servizi in linea con le tue preferenze. Se vuoi saperne di più o negare il consenso a tutti o ad alcuni cookie clicca su “maggiori informazioni”. Chiudendo questo banner, scorrendo questa pagina o cliccando su 'Si, accetto' acconsenti all’uso dei cookie",
         notificationTitleImplicit: "We use cookies to ensure you get the best experience on our website",
         poweredBy: "Cookie Consent plugin for the EU cookie law",
-        privacyPolicy: "maggiori informazioni",
+        privacyPolicy: "Maggiori informazioni",
         learnMore: "Scopri di più",
         seeDetails: "Maggiori informazioni",
         seeDetailsImplicit: "change your settings",
