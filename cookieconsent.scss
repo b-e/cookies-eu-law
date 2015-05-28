@@ -3,6 +3,17 @@
 */
 
 
+@mixin crocettaBianca
+{
+    background-color: white !important;
+    color: rgb(44, 44, 44) !important;
+    border-radius: 100% !important;
+    width: 15px !important;
+    height: 15px !important;
+    text-align: center !important;
+}
+
+
 #cc-close
 {
     position: absolute;
@@ -15,6 +26,17 @@
     {
         text-decoration: none;
         color: white;
+    }
+
+    @media only screen and (max-width: 380px)
+    {
+        @include crocettaBianca;
+    }
+
+
+    @media (max-width: 768px)
+    {
+        @include crocettaBianca;
     }
 }
 
@@ -802,6 +824,11 @@ DARK STYLE
 #cc-notification #cc-notification-wrapper
 {
 	padding: 20px 32px 0 !important;
+
+    @media only screen and (max-width: 380px)
+    {
+        padding: 21px 13px 0 !important;
+    }
 }
 
 #cc-notification #cc-notification-permissions ul
@@ -941,6 +968,12 @@ DARK STYLE
     line-height: 20px;
     text-transform: initial !important;
     color: white !important;
+
+    @media only screen and (max-width: 380px)
+    {
+        font-size: 11pt !important;
+        margin-top: 5px;
+    }
 }
 
 #cc-notification h2 a
@@ -948,6 +981,12 @@ DARK STYLE
 	letter-spacing: -0.05em;
 	font-size: 13pt;
     margin-left: 10px;
+
+    @media only screen and (max-width: 380px)
+    {
+        margin-left: 0px;
+        font-size: 11pt !important;
+    }
 }
 
 #cc-notification h3
@@ -1013,7 +1052,21 @@ DARK STYLE
     @media only screen and (max-width: 380px)
     {
         margin-top: 0px !important;
-        padding: 8px 103px !important;
+        padding: 8px 0px !important;
+        margin-right: 0px !important;
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 15px !important;
+    }
+
+
+    @media (max-width: 768px)
+    {
+        margin-top: 0px !important;
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0px 0px 20px 0px !important;
+        padding: 8px 0px !important;
     }
 
 }

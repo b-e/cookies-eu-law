@@ -96,7 +96,7 @@ var cc =
         analyticsDefaultDescription: "Google Analytics è uno strumento di analisi di Google che aiuta i proprietari di siti web e app a capire come i visitatori interagiscono con i contenuti di loro proprietà.",
         advertisingDefaultDescription: "Per aiutarci a tenere traccia delle vendite e di altre conversioni, viene aggiunto un cookie al computer di un utente nel momento in cui quell’utente fa clic su un annuncio.",
         defaultDescription: "Default cookie description.",
-        notificationTitle: "Questo sito utilizza cookie, anche di terze parti, per inviarti pubblicità e servizi in linea con le tue preferenze. Se vuoi saperne di più o negare il consenso a tutti o ad alcuni cookie clicca su “maggiori informazioni”. Chiudendo questo banner, scorrendo questa pagina o cliccando su 'Si, accetto' acconsenti all’uso dei cookie.",
+        notificationTitle: "Questo sito utilizza cookie, anche di terze parti, per inviarti pubblicità e servizi in linea con le tue preferenze. Se vuoi saperne di più o negare il consenso a tutti o ad alcuni cookie clicca su “maggiori informazioni”. Chiudendo questo banner, scorrendo questa pagina o cliccando su 'Si, accetto' acconsenti all’uso dei cookie",
         notificationTitleImplicit: "We use cookies to ensure you get the best experience on our website",
         poweredBy: "Cookie Consent plugin for the EU cookie law",
         privacyPolicy: "maggiori informazioni",
