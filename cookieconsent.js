@@ -101,7 +101,7 @@ var cc =
         poweredBy: "Cookie Consent plugin for the EU cookie law",
         privacyPolicy: "maggiori informazioni",
         learnMore: "Scopri di più",
-        seeDetails: "maggiori informazioni",
+        seeDetails: "Maggiori informazioni",
         seeDetailsImplicit: "change your settings",
         hideDetails: "nascondi",
         savePreference: 'Salva',
