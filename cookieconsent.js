@@ -638,7 +638,7 @@ var cc =
     {
         if (window.location.href.indexOf(cc.settings.privacyPolicyUrl) >= 0)
         {
-            console.log("non mostrare");
+            //console.log("non mostrare");
             return;
         }
 
