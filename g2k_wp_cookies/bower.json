@@ -1,0 +1,19 @@
+{
+  "name": "g2k-cookies-eu-law",
+  "description": "A radical new plugin for WordPress!",
+  "license": "GPLv2",
+  "authors": [
+    "g2k"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "cookies-eu-law": "https://git.g2k.it/progetti/cookies-eu-law.git"
+  }
+}

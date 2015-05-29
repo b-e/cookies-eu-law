@@ -1,0 +1,24 @@
+{
+  "name": "cookies-eu-law",
+  "authors": [
+    "Mattia Benedetti <mattiabenedetti@graffiti2000.com>"
+  ],
+  "description": "script per cookielaw",
+  "main": [
+    "cookieconsent.js",
+    "cookieconsent.css"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "_release": "440ad3d2da",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "440ad3d2da76291c772a0b068cc05c7c18e10d0b"
+  },
+  "_source": "https://git.g2k.it/progetti/cookies-eu-law.git",
+  "_target": "*",
+  "_originalSource": "https://git.g2k.it/progetti/cookies-eu-law.git",
+  "_direct": true
+}

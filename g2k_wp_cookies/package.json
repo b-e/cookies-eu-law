@@ -1,0 +1,17 @@
+{
+	"name": "g2k-cookies-eu-law",
+	"title": "g2k-cookies-eu-law",
+	"version": "0.1.0",
+	"description": "A radical new plugin for WordPress!",
+	"author": {
+		"name": "g2k",
+		"url": "http://example.com"
+	},
+	"license": "GPLv2",
+	"devDependencies": {
+	    "grunt": "latest",
+	    "grunt-contrib-watch": "latest",
+	    "grunt-wp-i18n": "latest",
+	    "load-grunt-tasks": "latest"
+	}
+}
