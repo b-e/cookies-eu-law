@@ -167,17 +167,14 @@ class G2kCookiesEULaw {
 		} , 12, 2);
 
 
-		add_action( 'wp_enqueue_scripts', 'g2kcookiesScriptAndStyleInjector' );
+		add_action( 'wp_enqueue_scripts', function()
+		{
+			wp_enqueue_style( 'cookieslaw', "/wp-content/plugins/g2k-cookies-eu-law/assets/bower/cookies-eu-law/cookieconsent.css");
+			wp_enqueue_script( 'cookieslaw', "/wp-content/plugins/g2k-cookies-eu-law/assets/bower/cookies-eu-law/cookieconsent.js", 20, 1);
+			wp_enqueue_script( 'cookieslaw-start',  "/wp-content/plugins/g2k-cookies-eu-law/assets/startconsent.js", 21, 1);
+		});
 	}
 
-
-
-
-	function g2kcookiesScriptAndStyleInjector()
-	{
-		wp_enqueue_style( 'style-name', get_stylesheet_uri() );
-		wp_enqueue_script( 'script-name', get_plugin_directory_uri() . '/js/example.js', array(), '1.0.0', true );
-	}
 
 
 	/**

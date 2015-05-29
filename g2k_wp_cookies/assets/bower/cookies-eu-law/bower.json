@@ -8,5 +8,6 @@
   "main": ["cookieconsent.js", "cookieconsent.css"],
   "moduleType": [
     "es6"
-  ]
+  ],
+  "ignore" : ["g2k_wp_cookies/*"]
 }

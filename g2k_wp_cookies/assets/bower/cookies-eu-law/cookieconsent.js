@@ -397,17 +397,17 @@ var cc =
 
     initialise: function (obj)
     {
-        $(".openSettings").click(function(e)
+        jQuery(".openSettings").click(function(e)
         {
             e.preventDefault();
             cc.showmodal();
         });
 
-        $(window).scroll(function()
+        jQuery(window).scroll(function()
         {
-            if($(window).scrollTop() > 100 && cc.allasked == false)
+            if(jQuery(window).scrollTop() > 100 && cc.allasked == false)
             {
-                $("#cc-approve-button-thissite").click();
+                jQuery("#cc-approve-button-thissite").click();
             }
         });
 
@@ -828,7 +828,7 @@ var cc =
 
         jQuery('#cc-close').click(function ()
         {
-            $("#cc-approve-button-thissite").click();
+            jQuery("#cc-approve-button-thissite").click();
         });
 
     },
@@ -1062,7 +1062,7 @@ var cc =
         {
             x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
             y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
-            x = x.replace(/^\s+|\s+$/g, "");
+            x = x.replace(/^\s+|\s+jQuery/g, "");
             if (x == c_name)
             {
                 return unescape(y);
