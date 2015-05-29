@@ -24,6 +24,7 @@ $(function ()
             },
             strings:
             {
+                //qui nuovi testi che andranno a sovrascrivere vecchi
             }
         });
 

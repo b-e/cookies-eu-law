@@ -143,24 +143,25 @@ class G2kCookiesEULaw {
 
 		add_action( 'init', array( $this, 'init' ) );
 
+		// wrappa ogni tag che va bloccato
 		add_filter( 'script_loader_tag', function ( $html, $handle )
 		{
-			$script_da_bloccare = array("Social_sharing_facebook_root", "mr_social_sharing", "Social_sharing_facebook_xfbml", "Social_sharing_twitter", "disqus_embed");
+			//echo $handle;
+			$script_social_da_bloccare = array("Social_sharing_facebook_root", "mr_social_sharing", "Social_sharing_facebook_xfbml", "Social_sharing_twitter", "disqus_embed");
+			$script_adv_da_bloccare = array();
+			$script_trk_da_bloccare = array();
 
-			if (in_array($handle, $script_da_bloccare))
+			if (in_array($handle, $script_social_da_bloccare))
 			{
-				preg_match("/https*:?\/\/.*.js(\?)*([a-zA-Z0-9]*=[a-zA-Z-0-9\.]*)*/", $html, $match );
-				if(count($match))
-				{
-					$src = $match[0];
-
-					return " <script type='text/plain' class='cc-onconsent-social'>
-					  var resource = document.createElement('script');
-					  resource.src = '" . $src . "';
-					  var script = document.getElementsByTagName('script')[0];
-					  script.parentNode.insertBefore(resource, script);
-				 </script> ";
-				}
+				return $this->eseguiRefactorScript($html, $handle, "cc-onconsent-social");
+			}
+			else if (in_array($handle, $script_adv_da_bloccare))
+			{
+				return $this->eseguiRefactorScript($html, $handle, "cc-onconsent-advertising");
+			}
+			else if (in_array($handle, $script_trk_da_bloccare))
+			{
+				return $this->eseguiRefactorScript($html, $handle, "cc-onconsent-analytics");
 			}
 			else
 			{
@@ -169,14 +170,32 @@ class G2kCookiesEULaw {
 		} , 12, 2);
 
 
+		// Aggiungi alla pagina js e css di cookiesconsent (va cmq attivato dal main.js del sito)
 		add_action( 'wp_enqueue_scripts', function()
 		{
 			wp_enqueue_style( 'cookieslaw', "/wp-content/plugins/g2k-cookies-eu-law/assets/bower/cookies-eu-law/cookieconsent.css");
 			wp_enqueue_script( 'cookieslaw', "/wp-content/plugins/g2k-cookies-eu-law/assets/bower/cookies-eu-law/cookieconsent.js", 20, 1);
-//			wp_enqueue_script( 'cookieslaw-start',  "/wp-content/plugins/g2k-cookies-eu-law/assets/startconsent.js", 21, 1);
+			//wp_enqueue_script( 'cookieslaw-start',  "/wp-content/plugins/g2k-cookies-eu-law/assets/startconsent.js", 21, 1);
 		});
 	}
 
+
+
+	function eseguiRefactorScript($html, $handle, $cssClass)
+	{
+		preg_match("/https*:?\/\/.*.js(\?)*([a-zA-Z0-9]*=[a-zA-Z-0-9\.]*)*/", $html, $match );
+		if(count($match))
+		{
+			$src = $match[0];
+
+			return " <script type='text/plain' class='cc-onconsent-social'>
+					  var resource = document.createElement('script');
+					  resource.src = '" . $src . "';
+					  var script = document.getElementsByTagName('script')[0];
+					  script.parentNode.insertBefore(resource, script);
+				 </script> ";
+		}
+	}
 
 
 	/**
