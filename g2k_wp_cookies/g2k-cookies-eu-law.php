@@ -145,20 +145,22 @@ class G2kCookiesEULaw {
 
 		add_filter( 'script_loader_tag', function ( $html, $handle )
 		{
-			echo $handle;
-			$script_da_bloccare = array("Social_sharing_facebook_root", "mr_social_sharing", "Social_sharing_facebook_xfbml", "Social_sharing_twitter");
+			$script_da_bloccare = array("Social_sharing_facebook_root", "mr_social_sharing", "Social_sharing_facebook_xfbml", "Social_sharing_twitter", "disqus_embed");
 
 			if (in_array($handle, $script_da_bloccare))
 			{
 				preg_match("/https*:?\/\/.*.js(\?)*([a-zA-Z0-9]*=[a-zA-Z-0-9\.]*)*/", $html, $match );
-				$src = $match[0];
+				if(count($match))
+				{
+					$src = $match[0];
 
-				return " <script type='text/plain' class='cc-onconsent-social'>
+					return " <script type='text/plain' class='cc-onconsent-social'>
 					  var resource = document.createElement('script');
 					  resource.src = '" . $src . "';
 					  var script = document.getElementsByTagName('script')[0];
 					  script.parentNode.insertBefore(resource, script);
 				 </script> ";
+				}
 			}
 			else
 			{
@@ -171,7 +173,7 @@ class G2kCookiesEULaw {
 		{
 			wp_enqueue_style( 'cookieslaw', "/wp-content/plugins/g2k-cookies-eu-law/assets/bower/cookies-eu-law/cookieconsent.css");
 			wp_enqueue_script( 'cookieslaw', "/wp-content/plugins/g2k-cookies-eu-law/assets/bower/cookies-eu-law/cookieconsent.js", 20, 1);
-			wp_enqueue_script( 'cookieslaw-start',  "/wp-content/plugins/g2k-cookies-eu-law/assets/startconsent.js", 21, 1);
+//			wp_enqueue_script( 'cookieslaw-start',  "/wp-content/plugins/g2k-cookies-eu-law/assets/startconsent.js", 21, 1);
 		});
 	}
 
