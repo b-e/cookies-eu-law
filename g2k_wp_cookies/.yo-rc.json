@@ -1,0 +1,17 @@
+{
+  "generator-plugin-wp": {
+    "name": "g2k-cookies-eu-law",
+    "homepage": "http://example.com",
+    "description": "A radical new plugin for WordPress!",
+    "version": "0.1.0",
+    "author": "g2k",
+    "authoremail": "dev@graffiti.it",
+    "authorurl": "http://example.com",
+    "license": "GPLv2",
+    "slug": "g2k-cookies-eu-law",
+    "classname": "G2k-cookies-eu-law",
+    "classprefix": "G2---_",
+    "prefix": "g2k_cookies_eu_law",
+    "year": 2015
+  }
+}
