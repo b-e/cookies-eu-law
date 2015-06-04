@@ -36,7 +36,7 @@
 
 
 // User composer autoload.
-require 'vendor/autoload_52.php';
+//require 'vendor/autoload_52.php';
 
 
 /**
