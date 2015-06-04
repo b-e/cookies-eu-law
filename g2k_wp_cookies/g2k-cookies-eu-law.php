@@ -173,9 +173,9 @@ class G2kCookiesEULaw {
 		// Aggiungi alla pagina js e css di cookiesconsent (va cmq attivato dal main.js del sito)
 		add_action( 'wp_enqueue_scripts', function()
 		{
-			wp_enqueue_style( 'cookieslaw', "/wp-content/plugins/g2k-cookies-eu-law/assets/bower/cookies-eu-law/cookieconsent.css");
-			wp_enqueue_script( 'cookieslaw', "/wp-content/plugins/g2k-cookies-eu-law/assets/bower/cookies-eu-law/cookieconsent.js", 20, 1);
-			//wp_enqueue_script( 'cookieslaw-start',  "/wp-content/plugins/g2k-cookies-eu-law/assets/startconsent.js", 21, 1);
+			wp_enqueue_style( 'cookieslaw', plugins_url("/assets/bower/cookies-eu-law/cookieconsent.css",__FILE__));
+			wp_enqueue_script( 'cookieslaw',plugins_url("/assets/bower/cookies-eu-law/cookieconsent.js", __FILE__));
+			wp_enqueue_script( 'cookieslaw-start',  plugins_url("/assets/bower/cookies-eu-law/startconsent.js", __FILE__));
 		});
 	}
 
