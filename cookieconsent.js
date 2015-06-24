@@ -435,7 +435,7 @@ var cc =
         cc.settings.bannerPosition = "cc-" + cc.settings.bannerPosition;
         if (cc.settings.useSSL)
         {
-            cc.settings.serveraddr = 'https://cookieconsent.silktide.com/';
+            //cc.settings.serveraddr = 'https://cookieconsent.silktide.com/';
         }
 
         if (window.jQuery)
@@ -664,7 +664,7 @@ var cc =
         '<ul class="cc-notification-buttons">' +
 
         '<li>' +
-        '<a class="cc-link" href="http://cookieconsent.silktide.com" id="cc-approve-button-allsites">' + cc.getStringLocalizzata().allowForAllSites + '</a>' +
+        '<a class="cc-link" href="" id="cc-approve-button-allsites">' + cc.getStringLocalizzata().allowForAllSites + '</a>' +
         '</li>' +
         '<li>' +
         '<a class="cc-link" href="#" id="cc-approve-button-thissite">' + cc.getStringLocalizzata().allowCookies + '</a>' +
