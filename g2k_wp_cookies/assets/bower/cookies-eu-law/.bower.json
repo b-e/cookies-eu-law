@@ -12,13 +12,14 @@
     "es6"
   ],
   "ignore": [
-    "g2k_wp_cookies/"
+    "g2k_wp_cookies/",
+    "esempio/"
   ],
-  "_release": "67875818cd",
+  "_release": "dde140fcb5",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "67875818cd84c584c58391566e8dcf7784b493fa"
+    "commit": "dde140fcb5118ebb90178b8e0d499f650dc059d6"
   },
   "_source": "https://git.g2k.it/progetti/cookies-eu-law.git",
   "_target": "*",

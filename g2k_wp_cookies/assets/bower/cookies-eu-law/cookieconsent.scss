@@ -3,6 +3,13 @@
 */
 
 
+
+#cc-notification-logo
+{
+    display: none !important;
+}
+
+
 @mixin crocettaBianca
 {
     background-color: white !important;
@@ -311,7 +318,6 @@
 #cc-modal .cc-logo,
 #cc-settingsmodal .cc-logo
 {
-	background-image: url(https://s3-eu-west-1.amazonaws.com/assets.cookieconsent.silktide.com/cookie-consent-logo.png);
 	width: 142px;
 	height: 32px;
 	position: absolute;
