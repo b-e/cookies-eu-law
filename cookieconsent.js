@@ -657,7 +657,7 @@ var cc =
 
         data = '<div id="cc-notification">' +
         '<div id="cc-notification-wrapper">' +
-        '<h2><span>' + cc.getStringLocalizzata().notificationTitle + '</span></h2>' +
+        '<h4><span>' + cc.getStringLocalizzata().notificationTitle + '</span></h4>' +
         '<div id="cc-notification-permissions">' +
         '<a id="cc-notification-logo" class="cc-logo" target="_blank" href="http://silktide.com/cookieconsent" title="' + cc.getStringLocalizzata().poweredBy + '"><span>' + cc.getStringLocalizzata().poweredBy + '</span></a> ' +
         '</div>' +
@@ -682,7 +682,7 @@ var cc =
         }
         if (cc.settings.consenttype == 'implicit')
         {
-            jQuery('#cc-notification h2 span').html(cc.getStringLocalizzata().notificationTitleImplicit);
+            jQuery('#cc-notification h4 span').html(cc.getStringLocalizzata().notificationTitleImplicit);
             jQuery('#cc-approve-button-thissite').html(cc.getStringLocalizzata().allowCookiesImplicit);
             jQuery('#cc-approve-button-thissite').parent().after(jQuery('#cc-approve-button-allsites').parent());
             jQuery('#cc-approve-button-allsites').hide();
@@ -737,7 +737,7 @@ var cc =
             }
         });
 
-        jQuery('#cc-notification-wrapper h2').append(' - <a class="cc-link" href="#" id="cc-notification-moreinfo">' + cc.getStringLocalizzata().seeDetails + '</a>');
+        jQuery('#cc-notification-wrapper h4').append(' - <a class="cc-link" href="#" id="cc-notification-moreinfo">' + cc.getStringLocalizzata().seeDetails + '</a>');
         if (cc.settings.consenttype == "implicit")
         {
             jQuery('#cc-notification-moreinfo').html(cc.getStringLocalizzata().seeDetailsImplicit);
@@ -813,7 +813,7 @@ var cc =
         }
         if (allcustom)
         {
-            jQuery('#cc-notification h2 span').html(cc.getStringLocalizzata().customCookie);
+            jQuery('#cc-notification h4 span').html(cc.getStringLocalizzata().customCookie);
             jQuery('#cc-approve-button-allsites').hide();
         }
         else
@@ -1287,7 +1287,7 @@ var cc =
         }
         data = '<div id="cc-modal">' +
         '<div id="cc-modal-wrapper">' +
-        '<h2>' + cc.getStringLocalizzata().privacySettingsDialogTitleA + ' <span>' + cc.getStringLocalizzata().privacySettingsDialogTitleB + '</span></h2>' +
+        '<h4>' + cc.getStringLocalizzata().privacySettingsDialogTitleA + ' <span>' + cc.getStringLocalizzata().privacySettingsDialogTitleB + '</span></h4>' +
         '<p class="cc-subtitle">' + cc.getStringLocalizzata().privacySettingsDialogSubtitle + '</p>' +
 
         '<div class="cc-content">' +
@@ -1610,7 +1610,7 @@ var cc =
 
         data = '<div id="cc-settingsmodal">' +
         '<div id="cc-settingsmodal-wrapper">' +
-        '<h2>' + cc.getStringLocalizzata().allSitesSettingsDialogTitleA + ' <span>' + cc.getStringLocalizzata().allSitesSettingsDialogTitleB + '</span></h2>' +
+        '<h4>' + cc.getStringLocalizzata().allSitesSettingsDialogTitleA + ' <span>' + cc.getStringLocalizzata().allSitesSettingsDialogTitleB + '</span></h4>' +
         '<p class="cc-subtitle">' + cc.getStringLocalizzata().allSitesSettingsDialogSubtitle + '</p>' +
         '<div class="cc-content">' +
         '</div>' +

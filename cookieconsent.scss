@@ -233,10 +233,10 @@
 #cc-settingsmodal,
 #cc-tag,
 #cc-notification,
-#cc-modal div, #cc-modal span, #cc-modal iframe, #cc-modal h1, #cc-modal h2, #cc-modal h3, #cc-modal h4, #cc-modal h5, #cc-modal h6, #cc-modal p, #cc-modal pre, #cc-modal a, #cc-modal code, #cc-modal em, #cc-modal img, #cc-modal s, #cc-modal small, #cc-modal strong, #cc-modal b, #cc-modal u, #cc-modal i, #cc-modal dl, #cc-modal dt, #cc-modal dd, #cc-modal ol, #cc-modal ul, #cc-modal li, #cc-modal form, #cc-modal label,
-#cc-settingsmodal div, #cc-settingsmodal span, #cc-settingsmodal iframe, #cc-settingsmodal h1, #cc-settingsmodal h2, #cc-settingsmodal h3, #cc-settingsmodal h4, #cc-settingsmodal h5, #cc-settingsmodal h6, #cc-settingsmodal p, #cc-settingsmodal pre, #cc-settingsmodal a, #cc-settingsmodal code, #cc-settingsmodal em, #cc-settingsmodal img, #cc-settingsmodal s, #cc-settingsmodal small, #cc-settingsmodal strong, #cc-settingsmodal b, #cc-settingsmodal u, #cc-settingsmodal i, #cc-settingsmodal dl, #cc-settingsmodal dt, #cc-settingsmodal dd, #cc-settingsmodal ol, #cc-settingsmodal ul, #cc-settingsmodal li, #cc-settingsmodal form, #cc-settingsmodal label,
-#cc-tag div, #cc-tag span, #cc-tag iframe, #cc-tag h1, #cc-tag h2, #cc-tag h3, #cc-tag h4, #cc-tag h5, #cc-tag h6, #cc-tag p, #cc-tag pre, #cc-tag a, #cc-tag code, #cc-tag em, #cc-tag img, #cc-tag s, #cc-tag small, #cc-tag strong, #cc-tag b, #cc-tag u, #cc-tag i, #cc-tag dl, #cc-tag dt, #cc-tag dd, #cc-tag ol, #cc-tag ul, #cc-tag li, #cc-tag form, #cc-tag label,
-#cc-notification div, #cc-notification span, #cc-notification iframe, #cc-notification h1, #cc-notification h2, #cc-notification h3, #cc-notification h4, #cc-notification h5, #cc-notification h6, #cc-notification p, #cc-notification pre, #cc-notification a, #cc-notification code, #cc-notification em, #cc-notification img, #cc-notification s, #cc-notification small, #cc-notification strong, #cc-notification b, #cc-notification u, #cc-notification i, #cc-notification dl, #cc-notification dt, #cc-notification dd, #cc-notification ol, #cc-notification ul, #cc-notification li, #cc-notification form, #cc-notification label
+#cc-modal div, #cc-modal span, #cc-modal iframe, #cc-modal h1, #cc-modal h4, #cc-modal h3, #cc-modal h4, #cc-modal h5, #cc-modal h6, #cc-modal p, #cc-modal pre, #cc-modal a, #cc-modal code, #cc-modal em, #cc-modal img, #cc-modal s, #cc-modal small, #cc-modal strong, #cc-modal b, #cc-modal u, #cc-modal i, #cc-modal dl, #cc-modal dt, #cc-modal dd, #cc-modal ol, #cc-modal ul, #cc-modal li, #cc-modal form, #cc-modal label,
+#cc-settingsmodal div, #cc-settingsmodal span, #cc-settingsmodal iframe, #cc-settingsmodal h1, #cc-settingsmodal h4, #cc-settingsmodal h3, #cc-settingsmodal h4, #cc-settingsmodal h5, #cc-settingsmodal h6, #cc-settingsmodal p, #cc-settingsmodal pre, #cc-settingsmodal a, #cc-settingsmodal code, #cc-settingsmodal em, #cc-settingsmodal img, #cc-settingsmodal s, #cc-settingsmodal small, #cc-settingsmodal strong, #cc-settingsmodal b, #cc-settingsmodal u, #cc-settingsmodal i, #cc-settingsmodal dl, #cc-settingsmodal dt, #cc-settingsmodal dd, #cc-settingsmodal ol, #cc-settingsmodal ul, #cc-settingsmodal li, #cc-settingsmodal form, #cc-settingsmodal label,
+#cc-tag div, #cc-tag span, #cc-tag iframe, #cc-tag h1, #cc-tag h4, #cc-tag h3, #cc-tag h4, #cc-tag h5, #cc-tag h6, #cc-tag p, #cc-tag pre, #cc-tag a, #cc-tag code, #cc-tag em, #cc-tag img, #cc-tag s, #cc-tag small, #cc-tag strong, #cc-tag b, #cc-tag u, #cc-tag i, #cc-tag dl, #cc-tag dt, #cc-tag dd, #cc-tag ol, #cc-tag ul, #cc-tag li, #cc-tag form, #cc-tag label,
+#cc-notification div, #cc-notification span, #cc-notification iframe, #cc-notification h1, #cc-notification h4, #cc-notification h3, #cc-notification h4, #cc-notification h5, #cc-notification h6, #cc-notification p, #cc-notification pre, #cc-notification a, #cc-notification code, #cc-notification em, #cc-notification img, #cc-notification s, #cc-notification small, #cc-notification strong, #cc-notification b, #cc-notification u, #cc-notification i, #cc-notification dl, #cc-notification dt, #cc-notification dd, #cc-notification ol, #cc-notification ul, #cc-notification li, #cc-notification form, #cc-notification label
 {
 	margin: 0;
 	padding: 0;
@@ -379,7 +379,7 @@ LIGHT STYLE
 	color: #257eb4 !important;
 }
 
-#cc-notification.cc-light h2,
+#cc-notification.cc-light h4,
 #cc-notification.cc-light h3,
 #cc-notification.cc-light p
 {
@@ -471,19 +471,19 @@ LIGHT STYLE
 }
 
 
-#cc-modal.cc-light #cc-modal-wrapper h2,
-#cc-settingsmodal.cc-light #cc-settingsmodal-wrapper h2
+#cc-modal.cc-light #cc-modal-wrapper h4,
+#cc-settingsmodal.cc-light #cc-settingsmodal-wrapper h4
 {
 	color: #1d1d1d !important;
 }
 
-#cc-modal.cc-light #cc-modal-wrapper h2 span,
-#cc-settingsmodal.cc-light #cc-settingsmodal-wrapper h2 span
+#cc-modal.cc-light #cc-modal-wrapper h4 span,
+#cc-settingsmodal.cc-light #cc-settingsmodal-wrapper h4 span
 {
 	color: #7a7a7a !important;
 }
 
-#cc-settingsmodal.cc-light #cc-settingsmodal-wrapper h2 span
+#cc-settingsmodal.cc-light #cc-settingsmodal-wrapper h4 span
 {
 	color: #71f031 !important;
 }
@@ -593,7 +593,7 @@ MONOCHROME STYLE
 	color: #ffffff !important;
 }
 
-#cc-notification.cc-monochrome h2,
+#cc-notification.cc-monochrome h4,
 #cc-notification.cc-monochrome h3,
 #cc-notification.cc-monochrome p
 {
@@ -696,19 +696,19 @@ MONOCHROME STYLE
 }
 
 
-#cc-modal.cc-monochrome #cc-modal-wrapper h2,
-#cc-settingsmodal.cc-monochrome #cc-settingsmodal-wrapper h2
+#cc-modal.cc-monochrome #cc-modal-wrapper h4,
+#cc-settingsmodal.cc-monochrome #cc-settingsmodal-wrapper h4
 {
 	color: #fff !important;
 }
 
-#cc-modal.cc-monochrome #cc-modal-wrapper h2 span,
-#cc-settingsmodal.cc-monochrome #cc-settingsmodal-wrapper h2 span
+#cc-modal.cc-monochrome #cc-modal-wrapper h4 span,
+#cc-settingsmodal.cc-monochrome #cc-settingsmodal-wrapper h4 span
 {
 	color: #7a7a7a !important;
 }
 
-#cc-settingsmodal.cc-monochrome #cc-settingsmodal-wrapper h2 span
+#cc-settingsmodal.cc-monochrome #cc-settingsmodal-wrapper h4 span
 {
 	color: #ddd !important;
 }
@@ -939,7 +939,7 @@ DARK STYLE
 	font-size:11pt;
 	width: auto !important;
 }
-#cc-notification h2
+#cc-notification h4
 {
 	margin-right: 320px;
 
@@ -954,13 +954,13 @@ DARK STYLE
     }
 }
 
-#cc-notification.cc-mobile h2
+#cc-notification.cc-mobile h4
 {
 	margin-right: 0 !important;
 }
 
-#cc-notification h2 span,
-#cc-notification h2
+#cc-notification h4 span,
+#cc-notification h4
 {
 	font-size: 12pt;
 	letter-spacing: -0.05em;
@@ -977,7 +977,7 @@ DARK STYLE
     }
 }
 
-#cc-notification h2 a
+#cc-notification h4 a
 {
 	letter-spacing: -0.05em;
 	font-size: 13pt;
@@ -1431,8 +1431,8 @@ DARK STYLE
 	overflow: hidden !important;
 }
 
-#cc-modal #cc-modal-wrapper h2,
-#cc-settingsmodal #cc-settingsmodal-wrapper h2
+#cc-modal #cc-modal-wrapper h4,
+#cc-settingsmodal #cc-settingsmodal-wrapper h4
 {
 	margin: 0 57px !important;
 	font-size: 24pt !important;
@@ -1441,20 +1441,20 @@ DARK STYLE
 	font-weight: 400;
 }
 
-#cc-settingsmodal #cc-settingsmodal-wrapper h2
+#cc-settingsmodal #cc-settingsmodal-wrapper h4
 {
 	margin: 0 72px !important;
 }
 
 
-#cc-modal #cc-modal-wrapper h2 span,
-#cc-settingsmodal #cc-settingsmodal-wrapper h2 span
+#cc-modal #cc-modal-wrapper h4 span,
+#cc-settingsmodal #cc-settingsmodal-wrapper h4 span
 {
 	font-size: 14pt !important;
 	color: #7a7a7a !important;
 }
 
-#cc-settingsmodal #cc-settingsmodal-wrapper h2 span
+#cc-settingsmodal #cc-settingsmodal-wrapper h4 span
 {
 	color: #71f031 !important;
 }
@@ -1677,19 +1677,19 @@ DARK STYLE
 	margin-top: 0 !important;
 	width: auto !important;
 }
-#cc-modal.cc-mobile #cc-modal-wrapper h2
+#cc-modal.cc-mobile #cc-modal-wrapper h4
 {
 	width: auto !important;
 	margin-left: 0 !important;
 }
-#cc-settingsmodal.cc-mobile #cc-settingsmodal-wrapper h2 span,
-#cc-modal.cc-mobile #cc-modal-wrapper h2 span
+#cc-settingsmodal.cc-mobile #cc-settingsmodal-wrapper h4 span,
+#cc-modal.cc-mobile #cc-modal-wrapper h4 span
 {
 	display: block;
 	margin-top: 8px;
 }
 
-#cc-settingsmodal.cc-mobile #cc-settingsmodal-wrapper h2
+#cc-settingsmodal.cc-mobile #cc-settingsmodal-wrapper h4
 {
 	margin-left: 10px !important;
 	width: auto !important;
@@ -1734,12 +1734,12 @@ DARK STYLE
         color: #015E96 !important;
     }
 
-    h2 span
+    h4 span
     {
         color: #333 !important;
     }
 
-    h2 a
+    h4 a
     {
         margin-left: 0px;
     }
