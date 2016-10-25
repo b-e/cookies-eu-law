@@ -9,6 +9,6 @@
   "moduleType": [
     "es6"
   ],
-  "private": true,
+  "repository": "https://github.com/b-e/cookies-eu-law",
   "ignore" : ["g2k_wp_cookies/", "esempio/"]
 }
