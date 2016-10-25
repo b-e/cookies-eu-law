@@ -9,5 +9,6 @@
   "moduleType": [
     "es6"
   ],
+  "private": true,
   "ignore" : ["g2k_wp_cookies/", "esempio/"]
 }
